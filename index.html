@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Assignment</title>
+</head>
+<body>
+    <script>
+        class Student {
+            constructor(name, address, phone, course) {
+                this.name = name;
+                this.address = address;
+                this.phone = phone;
+                this.course = course;
+            }
+
+            get info() {
+                return "Name: " + this.name + "\n" +
+                        "Address: " + this.address + "\n" +
+                        "Phone: " + this.phone + "\n" +
+                        "Course: " + this.course + "\n"
+            }
+        }
+
+        let student1 = new Student("Marshall J. Robeson", "4158 College View, Stlouis, IL", "618-610-7709", "Business")
+        let student2 = new Student("Daryl N. Williams", "4564 Freed Drive, Stockton, CA", "209-721-0977", "Computer Science")
+        let student3 = new Student("Melissa J. Williams", "3983 Lena Lane, Hattiesburg, MS", "601-520-7191", "Language Learning")
+
+        console.log(student1.info + "\n" + student2.info + "\n" + student3.info)
+    </script>
+</body>
+</html>
